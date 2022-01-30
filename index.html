@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Boris Web">
+	<meta name="description" content="Some description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-capable" content="yes">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Test</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="title">Тестовое задание FOCUSSTART-24944</h1>
+		</header>
+		<div class="description">
+			<h2 class="title__sub">Описание:</h2>
+			<p>Входные массивы целых чисел должны быть записаны в файле JSON-формата, расположенного в папке <code>file</code> с именем <code>arrays.json</code>. Пример структуры файла показан в разделе <strong>Входящие массивы.</strong></p>
+			<p>Перед сортировкой массивов по возрастанию, они будут проверены на содержание &#34;инородных&#34; типов данных. Например, если массив будет содержать элементы типа string, boolean, NaN, то такой элемент будет удален из массива. После проверки все массивы будут объеденены в один, который и будет отсортирован методом <dfn>Сортировка слиянием</dfn>, поэтому исходный порядок сортировки не важен.</p>
+		</div>
+		<div class="inner">
+			<div class="item">
+				<h2 class="title__sub">Входящие массивы:</h2>
+				<pre class="item__array" id="arrayIn"></pre>
+			</div>
+			<div class="item">
+				<h2 class="title__sub">Объединенный и проверенный массив:</h2>
+				<pre class="item__array" id="concatArray"></pre>
+			</div>
+			<div class="item">
+				<h2 class="title__sub">Отсортированные по возрастанию элементы массива методом перебора:</h2>
+				<pre class="item__array" id="arrayLooped"></pre>
+			</div>
+			<div class="item">
+				<h2 class="title__sub">Отсортированные по возрастанию элементы массива методом сортировки слиянием:</h2>
+				<pre class="item__array" id="arrayMerged"></pre>
+			</div>
+			<h3 class="item error" id="error"></h3>
+		</div>
+	</div>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

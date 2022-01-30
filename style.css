@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%; /* 10px */
+}
+
+body{
+	-webkit-font-smoothing: antialiased;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.6rem;
+	margin: 0;
+
+	min-width: 320px;
+	overflow-x: hidden;
+
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+input, select, textarea, button, a{
+  color: inherit;
+	font: inherit;
+	outline: none;
+}
+
+button{
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus{
+  outline: none;
+}
+
+a:visited:hover:active{
+  text-decoration: none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+strong,
+dfn{
+	font-weight: 700;
+}
+
+.container{
+	width: 100%;
+	max-width: 1430px;
+  padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header{
+	text-align: center;
+	padding: 40px 0;
+	margin-bottom: 15px;
+}
+
+.description{
+	margin-bottom: 25px;
+}
+
+.description p{
+	text-indent: 15px;
+	text-align: justify;
+}
+
+.item{
+	margin-bottom: 20px;
+}
+
+.item.error{
+	display: none;
+	color: #ff0036;
+}
